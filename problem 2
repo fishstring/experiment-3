@@ -1,0 +1,54 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+int main()
+{
+	int tempa[7], tempb[7], tempc[7], a[7], b[7], c[7], x, y, i;
+	
+	
+	cout << " enter the temperatures in province A \n";
+		for(i = 0; i < 7; i++)
+		{
+		
+		cin >> tempa[i];
+		}
+	cout << " enter the temperatures in province B \n";
+		for(x = 0; x < 7; x++)
+		{
+		cin >> tempb[x];
+		}
+				
+	cout << " enter the temperatures in province C \n";
+		for(y = 0; y < 7; y++)
+		{
+		cin >> tempc[y];
+		}
+	    	
+	for(int i = 0; i < 7; i++)	
+	{
+			a[i] = i + 1;
+		cout << "Province A, day " << a[i] << " : "  << tempa[i] << "\n";
+    } 
+
+cout << "\n";
+		for(int x = 0; x < 7; x++)	
+	{
+			b[x] = x + 1;
+		cout << "Province B, day " << a[x] << " : "  << tempb[x] << "\n";
+    }
+    
+cout << "\n";   
+    		for(int y = 0; y < 7; y++)	
+	{
+			c[y] = y + 1;
+		cout << "Province C, day " << a[y] << " : "  << tempc[y] << "\n";
+    }
+	
+	
+
+	
+	getch();
+	return 0;
+}
