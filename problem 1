@@ -1,0 +1,48 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+int main()
+{
+int sum, average, small, large, maxi, mini;
+int a[10];
+
+cout << "enter 10 numbers \n";
+
+for(int i = 0; i < 10; i++)
+cin >> a[i];
+
+sum = 0;
+for(int i = 0; i < 10; i++)
+sum = sum + a[i];
+
+large = a[0];
+small = a[0];
+for(int i = 0 ; i < 10 ; i++)
+{
+	if(a[i] > large)
+	large = a[i];
+	
+	if(a[i] < small)
+	small = a[i];
+	
+}
+
+
+
+
+average = sum / 10;
+
+cout << " \n" << endl;
+
+cout << " the total sum of the numbers is " << sum << "\n"; 
+cout << " the average of the numbers is " << average << "\n";
+cout << " the largest integer is " << large << "\n";
+cout << " the smallest integer is " << small << "\n";
+
+
+
+getch();
+return 0;	
+}
